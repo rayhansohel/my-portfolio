@@ -1,56 +1,46 @@
-import { LuLinkedin } from "react-icons/lu";
-import { FaInstagram } from "react-icons/fa";
+
 import { FaXTwitter } from "react-icons/fa6";
-import { FiFacebook } from "react-icons/fi";
-import { PiGithubLogoBold } from "react-icons/pi";
+import { Facebook, Github, Linkedin } from "lucide-react";
 
 const SocialLinks = () => {
   return (
-    <div className="pt-4">
+    <>
       {/* social icons */}
-      <div className="flex gap-3 items-center">
+      <div className="w-[176px] h-[176px] rounded-3xl grid grid-cols-2 gap-4">
         <a
           href="https://github.com/RayhanSohel"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-9 h-9 flex bg-base-300 items-center justify-center rounded-full hover:text-accent transition-colors"
+          className="bg-base-200 w-full h-full rounded-3xl border border-base-300 hover:text-accent transition-colors flex items-center justify-center"
         >
-          <PiGithubLogoBold className="text-lg" />
+          <Github size={32} />
         </a>
         <a
           href="https://www.linkedin.com/in/arayhansohel"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-9 h-9 flex bg-base-300 items-center justify-center rounded-full hover:text-accent transition-colors"
+          className="bg-base-200 w-full h-full rounded-3xl border border-base-300 hover:text-accent transition-colors flex items-center justify-center"
         >
-          <LuLinkedin className="text-lg" />
+          <Linkedin size={32} />
         </a>
         <a
           href="https://www.facebook.com/RayhanSohel"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-9 h-9 flex bg-base-300 items-center justify-center rounded-full hover:text-accent transition-colors"
+          className="bg-base-200 w-full h-full rounded-3xl border border-base-300 hover:text-accent transition-colors flex items-center justify-center"
         >
-          <FiFacebook className="text-lg" />
+          <Facebook size={32} />
         </a>
         <a
           href="https://x.com/rrayhanSohel"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-9 h-9 flex bg-base-300 items-center justify-center rounded-full hover:text-accent transition-colors"
+          className="bg-base-200 w-full h-full rounded-3xl border border-base-300 hover:text-accent transition-colors flex items-center justify-center"
         >
-          <FaXTwitter />
-        </a>
-        <a
-          href="https://www.instagram.com/arayhansohel/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-9 h-9 flex bg-base-300 items-center justify-center rounded-full hover:text-accent transition-colors"
-        >
-          <FaInstagram className="text-lg" />
+          <FaXTwitter size={32} />
         </a>
       </div>
-    </div>
+    </>
   );
 };
 

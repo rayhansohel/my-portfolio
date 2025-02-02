@@ -7,7 +7,7 @@ import SocialLinks from "./SocialLinks";
 const ContactSection = () => {
   return (
     <div id="contact" className="p-4">
-      <div className="space-y-6 w-full container mx-auto max-w-7xl items-center pb-6 md:pb-16">
+      <div className="space-y-6 w-full container mx-auto max-w-7xl items-center pb-6">
         <div className="w-full text-center flex items-center flex-col">
           <h3 className="uppercase opacity-70">Contact Me</h3>
           <div className="flex items-center justify-center w-full gap-4 mt-2">

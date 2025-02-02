@@ -16,7 +16,9 @@ const ProjectDetails = () => {
         <title>Rayhan Sohel - Project - {project.title} </title>
       </Helmet>
       <div className="container mx-auto max-w-7xl space-y-6 py-6 md:py-16">
-        <div className="flex flex-col md:flex-row gap-8 items-center">
+        <div className="flex flex-col gap-8 items-center max-w-3xl mx-auto">
+
+          
           {/* Project Image */}
           <div className="w-full">
             <img
@@ -28,10 +30,10 @@ const ProjectDetails = () => {
           <div className="w-full">
             {/* Project Info */}
             <div className="space-y-4 w-full">
-              <h1 className="text-4xl font-bold uppercase text-accent">
+              <h1 className="text-4xl pl-6 font-bold uppercase text-accent">
                 {project.title}
               </h1>
-              <p className="opacity-80">{project.description}</p>
+              <p className="opacity-80 pl-6">{project.description}</p>
 
               {/* TechStack,Challenges and Improvements */}
               <div className="space-y-4 bg-base-200 rounded-3xl p-6">

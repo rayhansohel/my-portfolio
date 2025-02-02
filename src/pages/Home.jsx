@@ -12,11 +12,11 @@ const Home = () => {
         <title>Rayhan Sohel</title>
       </Helmet>
       <div>
-        <HeroSection/>
-        <AboutSection/>
-        <SkillsSection/>
-        <ProjectsSection/>
-        <ContactSection/>
+          <HeroSection/>
+          <AboutSection/>
+          <SkillsSection/>
+          <ProjectsSection/>
+          <ContactSection/>
       </div>
     </div>
   );

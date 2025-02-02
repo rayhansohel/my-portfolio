@@ -2,6 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .btn {
-    @apply rounded-full;
+    @apply rounded-xl;
+    @apply tracking-wider;
   }

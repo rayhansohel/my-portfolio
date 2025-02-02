@@ -7,8 +7,7 @@ import BrandLogoDark from "../assets/logo/rs-logo-dark.png";
 import Lottie from "lottie-react";
 import loadingAnimation from "../assets/animations/Loading.json";
 import Menu from "./Menu";
-import Dropdown from "./Dropdown";
-import ThemeToggle from "./ThemeToggle";
+import { Download } from "lucide-react";
 
 const Navbar = () => {
   const { loading } = useContext(AuthContext);
@@ -23,34 +22,23 @@ const Navbar = () => {
   }
 
   return (
-    <div className="p-4">
-      <div className="container mx-auto max-w-7xl bg-base-200/60 backdrop-blur flex justify-between items-center rounded-full px-4 py-2">
-        <div className="flex md:hidden">
-          <Dropdown />
-        </div>
-        {/* Brand Logo */}
-        <div className="flex items-center">
-          <Link to="/">
-            <div className="flex items-center justify-center gap-2">
-              <img
-                src={theme === "dark" ? BrandLogoLight : BrandLogoDark}
-                alt="Logo"
-                className="w-6"
-              />
-            </div>
-          </Link>
-        </div>
+    <div className="flex gap-4 w-full">
+      {/* Brand Logo */}
+      <div className="bg-base-200 w-20 h-20 rounded-3xl border border-base-300">
+        <Link to="/">
+          <div className="flex items-center justify-center w-full h-full">
+            <img
+              src={theme === "dark" ? BrandLogoLight : BrandLogoDark}
+              alt="Logo"
+              className="w-9"
+            />
+          </div>
+        </Link>
+      </div>
+      {/* Menu Items */}
+      <div className="bg-base-200 h-20 flex-grow rounded-3xl border border-base-300 flex gap-4 items-center">
+        <Menu />
 
-        {/* Menu Items */}
-        <div className="hidden md:grid grid-flow-col-dense gap-2">
-          <Menu />
-        </div>
-
-        {/* buttons */}
-        <div className="flex space-x-2 items-center">
-          {/* Theme Toggle buttons */}
-          <ThemeToggle />
-        </div>
       </div>
     </div>
   );
