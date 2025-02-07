@@ -11,33 +11,33 @@ const SocialLinks = () => {
           href="https://github.com/RayhanSohel"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-base-200 w-full h-full rounded-3xl border border-base-300 hover:text-accent transition-colors flex items-center justify-center"
+          className="bg-base-200 w-full h-full rounded-3xl border border-base-300 hover:text-accent hover:bg-base-300 transition-colors flex items-center justify-center"
         >
-          <Github size={32} />
+          <Github />
         </a>
         <a
           href="https://www.linkedin.com/in/arayhansohel"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-base-200 w-full h-full rounded-3xl border border-base-300 hover:text-accent transition-colors flex items-center justify-center"
+          className="bg-base-200 w-full h-full rounded-3xl border border-base-300 hover:text-accent hover:bg-base-300 transition-colors flex items-center justify-center"
         >
-          <Linkedin size={32} />
+          <Linkedin />
         </a>
         <a
           href="https://www.facebook.com/RayhanSohel"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-base-200 w-full h-full rounded-3xl border border-base-300 hover:text-accent transition-colors flex items-center justify-center"
+          className="bg-base-200 w-full h-full rounded-3xl border border-base-300 hover:text-accent hover:bg-base-300 transition-colors flex items-center justify-center"
         >
-          <Facebook size={32} />
+          <Facebook />
         </a>
         <a
           href="https://x.com/rrayhanSohel"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-base-200 w-full h-full rounded-3xl border border-base-300 hover:text-accent transition-colors flex items-center justify-center"
+          className="bg-base-200 w-full h-full rounded-3xl border border-base-300 hover:text-accent hover:bg-base-300 transition-colors flex items-center justify-center"
         >
-          <FaXTwitter size={32} />
+          <FaXTwitter size={24} />
         </a>
       </div>
     </>

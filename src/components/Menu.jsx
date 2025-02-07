@@ -1,5 +1,5 @@
 import { ThemeContext } from "@react-pdf-viewer/core";
-import { Download, House, Pickaxe, User } from "lucide-react";
+import { Briefcase, Download, House, Pickaxe, User } from "lucide-react";
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { Tooltip } from "react-tooltip";
@@ -17,7 +17,7 @@ const Menu = () => {
             data-tooltip-id="tooltip"
             data-tooltip-content="Home"
             className={({ isActive }) =>
-              `w-14 h-14 btn btn-primary border-none shadow-none hover:text-accent ${
+              `w-14 h-14 border border-base-300 rounded-box hover:text-accent hover:bg-base-300 transition-colors flex items-center justify-center gap-2 ${
                 isActive ? "text-accent" : "transition"
               }`
             }
@@ -32,7 +32,7 @@ const Menu = () => {
             data-tooltip-id="tooltip"
             data-tooltip-content="About"
             className={({ isActive }) =>
-              `w-14 h-14 btn btn-primary border-none shadow-none hover:text-accent ${
+              `w-14 h-14 border border-base-300 rounded-box hover:text-accent hover:bg-base-300 transition-colors flex items-center justify-center gap-2 ${
                 isActive ? "text-accent" : "transition"
               }`
             }
@@ -47,26 +47,26 @@ const Menu = () => {
             data-tooltip-id="tooltip"
             data-tooltip-content="Work"
             className={({ isActive }) =>
-              `w-14 h-14 btn btn-primary border-none shadow-none hover:text-accent ${
+              `w-14 h-14 border border-base-300 rounded-box hover:text-accent hover:bg-base-300 transition-colors flex items-center justify-center gap-2 ${
                 isActive ? "text-accent" : "transition"
               }`
             }
           >
-            <Pickaxe />
+            <Briefcase />
           </NavLink>
         </div>
       </div>
 
       <div>
         <a
-          href="/src/assets/Resume_of_Md_Abdur_Rayhan_Fontend_Developer.pdf"
-          download
+          href="https://drive.google.com/file/d/1nX8GiXPEzsIQD-TnUjrCUpHq_2nOqdp3/view?usp=sharing"
+          target="_blank"
           data-tooltip-id="tooltip"
           data-tooltip-content="Download Resume"
           rel="noopener noreferrer"
-          className="h-14 px-6 btn btn-primary border-none shadow-none text-xl font-normal border border-base-300 dounded-3xl hover:text-accent transition-colors flex items-center justify-center"
+          className="h-14 px-6 border border-base-300 rounded-box hover:text-accent hover:bg-base-300 transition-colors flex items-center justify-center gap-2"
         >
-          Resume <Download />
+          Resume <Download size={20} />
         </a>
       </div>
       {/* Tooltip Component */}
@@ -77,7 +77,7 @@ const Menu = () => {
           backgroundColor: theme === "light" ? "#18181b" : "#f4f4f5",
           color: theme === "light" ? "#ffffff" : "#000000",
           padding: "6px 20px",
-          borderRadius: "6px",
+          borderRadius: "10px",
         }}
       />
     </div>

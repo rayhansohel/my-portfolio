@@ -38,7 +38,6 @@ const Navbar = () => {
       {/* Menu Items */}
       <div className="bg-base-200 h-20 flex-grow rounded-3xl border border-base-300 flex gap-4 items-center">
         <Menu />
-
       </div>
     </div>
   );
