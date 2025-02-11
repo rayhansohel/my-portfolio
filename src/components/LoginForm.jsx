@@ -104,7 +104,7 @@ const LoginForm = () => {
 
   return (
     <div>
-      <div className="flex flex-col items-center justify-center min-w-96">
+      <div className="flex flex-col items-center justify-center">
         <div>
           <button
             onClick={handleGoogleSignIn}

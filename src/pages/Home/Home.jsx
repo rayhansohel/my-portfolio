@@ -4,6 +4,8 @@ import Navbar from "../../components/Navbar";
 import SocialLinks from "../../components/SocialLinks";
 import ThemeToggle from "./../../components/ThemeToggle";
 import ZoomInMotion from "../../components/ZoomInMotion";
+import ContactForm from "../../components/ContactForm";
+import LoginForm from "../../components/LoginForm";
 
 const Home = () => {
   return (
@@ -69,7 +71,9 @@ const Home = () => {
                   </div>
                 </ZoomInMotion>
               </div>
-              <ZoomInMotion className="w-full flex-1 bg-base-200 rounded-[40px] border border-base-300"></ZoomInMotion>
+              <ZoomInMotion className="w-full flex-1 bg-base-200 rounded-[40px] border border-base-300 p-4 flex items-center justify-center">
+                <LoginForm />
+              </ZoomInMotion>
             </div>
           </div>
           <ZoomInMotion className="w-full flex-1 bg-base-200 rounded-[40px] border border-base-300"></ZoomInMotion>
