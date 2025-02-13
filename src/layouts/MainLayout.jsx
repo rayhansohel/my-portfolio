@@ -11,7 +11,7 @@ const MainLayout = () => {
   }, []);
   
   return (
-    <div className="text-sm text-secondary min-h-screen p-4 font-poppins mx-auto max-w-screen-2xl">
+    <div className="text-sm text-secondary min-h-screen p-4 font-poppins">
           <Outlet />
     </div>
   );
